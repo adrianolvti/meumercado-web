@@ -11,3 +11,7 @@ function getType() {
     localStorage.setItem('type', type.value);
 }
 
+function getPassword() {
+    type = document.getElementById('password');
+    localStorage.setItem('password', password.value);
+}

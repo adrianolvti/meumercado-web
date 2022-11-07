@@ -1,0 +1,4 @@
+- Rodar a aplicalção em ambiente windows
+- Rodar o projeto meumercado-api
+- Instalar a extenção liveserver do vscode
+- Após executar o liveserver, vai abrir uma página no navegador do goolge chrome
