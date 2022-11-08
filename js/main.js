@@ -1,3 +1,5 @@
+
+
 function allProducts(url) {
     let request = new XMLHttpRequest();
     request.open("GET", url, false);
@@ -13,7 +15,7 @@ function newLineTable(product) {
     let tdPrice = document.createElement("td");
     let tdInventory = document.createElement("td");
 
-    tdCode.innerHTML = product.code;
+    tdCode.innerHTML = product.id;
     tdName.innerHTML = product.name;
     tdType.innerHTML = product.type.name;
     tdPrice.innerHTML = product.price;

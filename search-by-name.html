@@ -34,7 +34,10 @@
                                     <a class="nav-link active" aria-current="page" href="index.html">Início</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link" href="#">Dashboard do Administrador</a>
+                                    <a class="nav-link" data-bs-toggle="modal" data-bs-target="#exampleModal"
+                                        href="/dashboard.html">
+                                        Dashboard do Administrador
+                                    </a>
                                 </li>
                             </ul>
                             <form class="d-flex mt-3" role="search">
@@ -86,6 +89,33 @@
                             </div>
                         </div>
                     </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalLabel">Acesso ao dashboard</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="mb-2">
+                            <label for="password" class="col-form-label">Senha</label>
+                            <input type="text" class="form-control" name="password" id="password"
+                                onchange="getPassword()">
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-dark" data-bs-dismiss="modal">Sair</button>
+                    <button type="submit" class="btn btn-dark">
+                        <a href='/dashboard.html'>
+                            Acessar
+                        </a>
+                    </button>
                 </div>
             </div>
         </div>
