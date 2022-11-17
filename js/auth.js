@@ -13,7 +13,7 @@ var password = localStorage.getItem('password');
 
 function auth() {
 
-    fetch("https://meumercado-api.herokuapp.com//user", {
+    fetch("https://meumercado-api.herokuapp.com/user", {
         method: 'POST',
         headers: { 'Content-Type': 'application/json;charset=UTF-8' },
         body: JSON.stringify({ "password": password })
