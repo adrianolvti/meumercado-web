@@ -1,7 +1,7 @@
 var password = localStorage.getItem('password');
 
 // function userApi(uri = null, methodApi, bodyApi = null) {
-//     fetch("http://localhost:8080/user" + uri, {
+//     fetch("hhttps://meumercado-api.herokuapp.com/user" + uri, {
 //         method: methodApi,
 //         headers: { 'Content-Type': 'application/json;charset=UTF-8' },
 //         body: bodyApi
@@ -13,7 +13,7 @@ var password = localStorage.getItem('password');
 
 function auth() {
 
-    fetch("http://localhost:8080/user", {
+    fetch("https://meumercado-api.herokuapp.com//user", {
         method: 'POST',
         headers: { 'Content-Type': 'application/json;charset=UTF-8' },
         body: JSON.stringify({ "password": password })

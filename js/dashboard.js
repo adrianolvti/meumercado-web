@@ -130,7 +130,7 @@ function updateProduct(id) {
 }
 
 function deleteProductApi(id) {
-    let url = "http://localhost:8080/product/" + id;
+    let url = "https://meumercado-api.herokuapp.com/product/" + id;
     let request = new XMLHttpRequest();
     request.open("DELETE", url, true);
     request.setRequestHeader("Content-Type", "application/json");
@@ -149,10 +149,10 @@ function submitModal() {
 
     if (sendModal) {
         method = "POST";
-        url = "http://localhost:8080/product";
+        url = "https://meumercado-api.herokuapp.com/product";
     } else {
         method = "PUT";
-        url = "http://localhost:8080/product/" + updateId;
+        url = "https://meumercado-api.herokuapp.com/product/" + updateId;
     }
 
     createProduct(url, method);
@@ -163,7 +163,7 @@ function main() {
     /**
      * Lista de todos os produts
     */
-    let data = allProducts("http://localhost:8080/product");
+    let data = allProducts("https://meumercado-api.herokuapp.com/product");
     products = JSON.parse(data);
     let table = document.getElementById("table");
 
@@ -175,7 +175,7 @@ function main() {
     /**
      * Lista de todos os tipos
     */
-    let dataTypes = allTypes("http://localhost:8080/type");
+    let dataTypes = allTypes("https://meumercado-api.herokuapp.com/type");
     types = JSON.parse(dataTypes);
 
     let select = document.getElementById("select-type");

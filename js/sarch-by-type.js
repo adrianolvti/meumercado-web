@@ -31,7 +31,7 @@ function newLineTable(product) {
 }
 
 function main() {
-    var url = "http://localhost:8080/product/search-by-type/" + type;
+    var url = "https://meumercado-api.herokuapp.com/product/search-by-type/" + type;
 
     let data = allProducts(url);
     let products = JSON.parse(data);

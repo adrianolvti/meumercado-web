@@ -31,7 +31,7 @@ function newLineTable(product) {
 }
 
 function main() {
-    let data = allProducts("http://localhost:8080/product");
+    let data = allProducts("https://meumercado-api.herokuapp.com/product");
     let products = JSON.parse(data);
     let table = document.getElementById("table");
 
